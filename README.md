@@ -1,6 +1,6 @@
 # RustMQ (Simplified Messaging Queue)
 
-Portfolio project
+> Portfolio project
 
 ## Plan
 
