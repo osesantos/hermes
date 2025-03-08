@@ -27,3 +27,35 @@ A lightweight, high-performance message queue system built in Go.
 2. Persistent Storage
 3. Network Server
 4. Client Libraries
+
+---
+
+## Development
+
+### Build
+
+```bash
+go build -o hermes ./src/main.go
+```
+
+### Run
+
+```bash
+./hermes
+```
+
+### Test
+
+```bash
+go test -v -cover ./...
+```
+
+### Docker
+> TODO: Add Docker
+
+```bash
+docker build -t hermes .
+docker run -p 8080:8080 hermes
+```
+
+> TODO: Add Docker Compose

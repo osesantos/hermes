@@ -27,5 +27,6 @@ func (s *Subscriber) Subscribe(topic string) {
 
 func (s *Subscriber) Unsubscribe() {
 	close(s.Channel)
+	s.Channel = nil
 	s.Topic = ""
 }
