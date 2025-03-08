@@ -1,3 +1,5 @@
+[![Go](https://github.com/osesantos/hermes/actions/workflows/go.yml/badge.svg)](https://github.com/osesantos/hermes/actions/workflows/go.yml)
+
 # Hermes 📬
 > Portfolio project
 
