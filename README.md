@@ -58,4 +58,10 @@ docker build -t hermes .
 docker run -p 8080:8080 hermes
 ```
 
+### Docker Compose
 > TODO: Add Docker Compose
+
+```bash
+docker-compose up
+```
+
