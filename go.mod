@@ -4,6 +4,7 @@ go 1.24.1
 
 require (
 	github.com/google/uuid v1.6.0
+	github.com/osesantos/resulto v1.0.2
 	github.com/urfave/cli/v2 v2.27.6
 )
 

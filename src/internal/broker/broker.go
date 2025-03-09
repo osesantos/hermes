@@ -4,11 +4,11 @@ import (
 	"sync"
 	"time"
 
-	"hermes/src/internal"
 	"hermes/src/internal/message"
 	"hermes/src/internal/subscriber"
 
 	"github.com/google/uuid"
+	"github.com/osesantos/resulto"
 )
 
 type Broker struct {
@@ -26,7 +26,7 @@ func NewBroker() *Broker {
 }
 
 // Publish publishes a message to a topic.
-func (b *Broker) Publish(topic string, payload []byte) internal.Result[error] {
+func (b *Broker) Publish(topic string, payload []byte) resulto.Result[error] {
 	b.mu.Lock()
 	defer b.mu.Unlock()
 
@@ -48,5 +48,5 @@ func (b *Broker) Publish(topic string, payload []byte) internal.Result[error] {
 		}
 	}
 
-	return internal.Success[error](nil)
+	return resulto.Success[error](nil)
 }
